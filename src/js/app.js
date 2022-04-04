@@ -2,9 +2,30 @@ import * as nikfunctions from "./modules/functions.js";
 
 nikfunctions.isWebp();
 
-import Swiper, { Navigation, Pagination } from 'swiper';
-
 $(function () {
+  $('.product-item__modal-cart-number').styler()
+
+  $('.product-item__modal-slider-big').slick({
+    arrows: false,
+    fade:true,
+    asNavFor: '.product-item__modal-slider-small',
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  })
+  $('.product-item__modal-slider-small').slick({
+    asNavFor: '.product-item__modal-slider-big',
+    variableWidth: true,
+    infinite: false,
+  })
+
+  $('.product-item__modal-close').on('click', function () {
+    $('.product-item__modal').removeClass('product-item__modal--active');
+  });
+
+  $('.product-item__hover-icon').on('click', function () {
+    const modal = this.closest('.product-item__wrapper').querySelector('.product-item__modal')
+    modal.classList.add('product-item__modal--active');
+  });
 
   $('.products__btn-show').on('click', function () {
     $('.products__btn-show').removeClass('products__btn-show--active');

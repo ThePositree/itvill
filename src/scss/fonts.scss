@@ -1,4 +1,11 @@
 @font-face{
+	font-family: gotham_medium;
+	font-display: swap;
+	src: url("../fonts/gotham_medium.woff2") format("woff2"), url("../fonts/gotham_medium.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face{
 	font-family: Mitr;
 	font-display: swap;
 	src: url("../fonts/Mitr-Regular.woff2") format("woff2"), url("../fonts/Mitr-Regular.woff") format("woff");
@@ -8,22 +15,15 @@
 @font-face{
 	font-family: Montserrat;
 	font-display: swap;
-	src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
-	font-weight: 500;
-	font-style: normal;
-}
-@font-face{
-	font-family: gotham-medium;
-	font-display: swap;
-	src: url("../fonts/gotham_medium.woff2") format("woff2"), url("../fonts/gotham_medium.woff") format("woff");
+	src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
 	font-weight: 400;
 	font-style: normal;
 }
 @font-face{
 	font-family: Montserrat;
 	font-display: swap;
-	src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
-	font-weight: 400;
+	src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
+	font-weight: 500;
 	font-style: normal;
 }
 @font-face{

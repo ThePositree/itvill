@@ -177,8 +177,9 @@
       min-width: 269px;
     }
     &--2 {
-      min-width: 453px;
-      right: 0;
+      min-width: 269px;
+      right: 50%;
+      transform: translateX(50%);
     }
     &--3 {
       min-width: 230px;
