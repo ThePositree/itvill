@@ -267,10 +267,20 @@
       width: 100%;
       height: 100%;
     }
+    &.swiper {
+      width: 323px;
+      height: 292px;
+    }
   }
   &__modal-slider-big-item {
     width: 323px;
     height: 292px;
+  }
+  &__modal-slider-small {
+    &.swiper {
+      width: 323px;
+      height: 60px;
+    }
   }
   &__modal-slider-small-item {
     width: 60px;
@@ -349,7 +359,7 @@
   }
   &__modal-cart-text {
     margin-right: 5px;
-    @extend %montserrat-400
+    @extend %montserrat-400;
   }
   &__modal-price {
     display: flex;
@@ -374,7 +384,7 @@
     font-size: 14px;
     @extend %montserrat-400;
     &:nth-child(2n) {
-      background: #F3F3F3;
+      background: #f3f3f3;
     }
   }
 }

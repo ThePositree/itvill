@@ -7,7 +7,7 @@ export const html = () => {
         .pipe(app.plugins.plumber(
             app.plugins.notify.onError({
                 title: "HTML",
-                message: "Erorr: <%= erorr.message %>"
+                message: "Error: <%= error.message %>"
             })
         ))
         .pipe(fileinclude())

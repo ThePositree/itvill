@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 @@include('html/head.html', {
+"css":'<link rel="stylesheet" href="css/products.min.css">',
 "title":"Каталог"
 })
 
@@ -42,7 +43,7 @@
         </div>
         <div class="products__content">
           <div class="products__items">
-            <div class="product-item__wrapper">
+            <div class="product-item-wrapper">
               <div class="product-item product-item--no-availability" href="#">
                 <div class="product-item__img-inner">
                   <img class="product-item__img-bg" src="img/product-item/item-bg-1.jpg" alt="">
@@ -104,26 +105,30 @@
                   <div class="product-item__modal-content">
                     <div class="product-item__modal-left">
                       <div class="product-item__modal-sliders">
-                        <div class="product-item__modal-slider-big">
-                          <div class="product-item__modal-slider-big-item">
-                            <img src="img/viewing/big-slider/item-1.jpg" alt="">
-                          </div>
-                          <div class="product-item__modal-slider-big-item">
-                            <img src="img/viewing/big-slider/item-2.jpg" alt="">
-                          </div>
-                          <div class="product-item__modal-slider-big-item">
-                            <img src="img/viewing/big-slider/item-3.jpg" alt="">
+                        <div class="product-item__modal-slider-big swiper">
+                          <div class="product-item__modal-slider-big-wrapper swiper-wrapper">
+                            <div class="product-item__modal-slider-big-item swiper-slide">
+                              <img src="img/viewing/big-slider/item-1.jpg" alt="">
+                            </div>
+                            <div class="product-item__modal-slider-big-item swiper-slide">
+                              <img src="img/viewing/big-slider/item-2.jpg" alt="">
+                            </div>
+                            <div class="product-item__modal-slider-big-item swiper-slide">
+                              <img src="img/viewing/big-slider/item-3.jpg" alt="">
+                            </div>
                           </div>
                         </div>
-                        <div class="product-item__modal-slider-small">
-                          <div class="product-item__modal-slider-small-item">
-                            <img src="img/viewing/small-slider/item-1.jpg" alt="">
-                          </div>
-                          <div class="product-item__modal-slider-small-item">
-                            <img src="img/viewing/small-slider/item-2.jpg" alt="">
-                          </div>
-                          <div class="product-item__modal-slider-small-item">
-                            <img src="img/viewing/small-slider/item-3.jpg" alt="">
+                        <div class="product-item__modal-slider-small swiper">
+                          <div class="product-item__modal-slider-small-wrapper swiper-wrapper">
+                            <div class="product-item__modal-slider-small-item swiper-slide">
+                              <img src="img/viewing/small-slider/item-1.jpg" alt="">
+                            </div>
+                            <div class="product-item__modal-slider-small-item swiper-slide">
+                              <img src="img/viewing/small-slider/item-2.jpg" alt="">
+                            </div>
+                            <div class="product-item__modal-slider-small-item swiper-slide">
+                              <img src="img/viewing/small-slider/item-3.jpg" alt="">
+                            </div>
                           </div>
                         </div>
                         <button class="product-item__favorites">
@@ -211,7 +216,7 @@
                 </div>
               </div>
             </div>
-            <div class="product-item__wrapper">
+            <div class="product-item-wrapper">
               <div class="product-item product-item--no-availability" href="#">
                 <div class="product-item__img-inner">
                   <img class="product-item__img-bg" src="img/product-item/item-bg-2.jpg" alt="">
@@ -380,7 +385,7 @@
                 </div>
               </div>
             </div>
-            <div class="product-item__wrapper">
+            <div class="product-item-wrapper">
               <div class="product-item product-item--no-availability" href="#">
                 <div class="product-item__img-inner">
                   <img class="product-item__img-bg" src="img/product-item/item-bg-3.jpg" alt="">
@@ -549,7 +554,7 @@
                 </div>
               </div>
             </div>
-            <div class="product-item__wrapper">
+            <div class="product-item-wrapper">
               <div class="product-item product-item--no-availability" href="#">
                 <div class="product-item__img-inner">
                   <img class="product-item__img-bg" src="img/product-item/item-bg-4.jpg" alt="">
@@ -718,7 +723,7 @@
                 </div>
               </div>
             </div>
-            <div class="product-item__wrapper">
+            <div class="product-item-wrapper">
               <div class="product-item product-item--no-availability" href="#">
                 <div class="product-item__img-inner">
                   <img class="product-item__img-bg" src="img/product-item/item-bg-5.jpg" alt="">
@@ -887,7 +892,7 @@
                 </div>
               </div>
             </div>
-            <div class="product-item__wrapper">
+            <div class="product-item-wrapper">
               <div class="product-item product-item--no-availability" href="#">
                 <div class="product-item__img-inner">
                   <img class="product-item__img-bg" src="img/product-item/item-bg-6.jpg" alt="">
@@ -1056,7 +1061,7 @@
                 </div>
               </div>
             </div>
-            <div class="product-item__wrapper">
+            <div class="product-item-wrapper">
               <div class="product-item product-item--no-availability" href="#">
                 <div class="product-item__img-inner">
                   <img class="product-item__img-bg" src="img/product-item/item-bg-7.jpg" alt="">
@@ -1225,7 +1230,7 @@
                 </div>
               </div>
             </div>
-            <div class="product-item__wrapper">
+            <div class="product-item-wrapper">
               <div class="product-item product-item--no-availability" href="#">
                 <div class="product-item__img-inner">
                   <img class="product-item__img-bg" src="img/product-item/item-bg-8.jpg" alt="">
@@ -1394,7 +1399,7 @@
                 </div>
               </div>
             </div>
-            <div class="product-item__wrapper">
+            <div class="product-item-wrapper">
               <div class="product-item product-item--no-availability" href="#">
                 <div class="product-item__img-inner">
                   <img class="product-item__img-bg" src="img/product-item/item-bg-9.jpg" alt="">
@@ -1563,7 +1568,7 @@
                 </div>
               </div>
             </div>
-            <div class="product-item__wrapper">
+            <div class="product-item-wrapper">
               <div class="product-item product-item--no-availability" href="#">
                 <div class="product-item__img-inner">
                   <img class="product-item__img-bg" src="img/product-item/item-bg-10.jpg" alt="">
@@ -1732,7 +1737,7 @@
                 </div>
               </div>
             </div>
-            <div class="product-item__wrapper">
+            <div class="product-item-wrapper">
               <div class="product-item product-item--no-availability" href="#">
                 <div class="product-item__img-inner">
                   <img class="product-item__img-bg" src="img/product-item/item-bg-11.jpg" alt="">
@@ -1901,7 +1906,7 @@
                 </div>
               </div>
             </div>
-            <div class="product-item__wrapper">
+            <div class="product-item-wrapper">
               <div class="product-item product-item--no-availability" href="#">
                 <div class="product-item__img-inner">
                   <img class="product-item__img-bg" src="img/product-item/item-bg-12.jpg" alt="">
@@ -2070,7 +2075,7 @@
                 </div>
               </div>
             </div>
-            <div class="product-item__wrapper">
+            <div class="product-item-wrapper">
               <div class="product-item product-item--no-availability" href="#">
                 <div class="product-item__img-inner">
                   <img class="product-item__img-bg" src="img/product-item/item-bg-13.jpg" alt="">
@@ -2239,7 +2244,7 @@
                 </div>
               </div>
             </div>
-            <div class="product-item__wrapper">
+            <div class="product-item-wrapper">
               <div class="product-item product-item--no-availability" href="#">
                 <div class="product-item__img-inner">
                   <img class="product-item__img-bg" src="img/product-item/item-bg-14.jpg" alt="">
@@ -2408,7 +2413,7 @@
                 </div>
               </div>
             </div>
-            <div class="product-item__wrapper">
+            <div class="product-item-wrapper">
               <div class="product-item product-item--no-availability" href="#">
                 <div class="product-item__img-inner">
                   <img class="product-item__img-bg" src="img/product-item/item-bg-15.jpg" alt="">
@@ -2589,7 +2594,7 @@
   <script src="js/libs/jquery-3.6.0.min.js"></script>
   <script src="js/libs/ion.rangeSlider.min.js"></script>
   <script src="js/libs/jquery.formstyler.min.js"></script>
-  <script src="js/libs/slick.min.js"></script>
+  <script src="js/libs/swiper-bundle.min.js"></script>
   <script src="js/app.min.js"></script>
 </body>
 

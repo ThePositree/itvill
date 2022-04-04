@@ -2,28 +2,17 @@ import * as nikfunctions from "./modules/functions.js";
 
 nikfunctions.isWebp();
 
-$(function () {
-  $('.product-item__modal-cart-number').styler()
 
-  $('.product-item__modal-slider-big').slick({
-    arrows: false,
-    fade:true,
-    asNavFor: '.product-item__modal-slider-small',
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  })
-  $('.product-item__modal-slider-small').slick({
-    asNavFor: '.product-item__modal-slider-big',
-    variableWidth: true,
-    infinite: false,
-  })
+$(function () {
+
+  $('.product-item__modal-cart-number').styler();
 
   $('.product-item__modal-close').on('click', function () {
     $('.product-item__modal').removeClass('product-item__modal--active');
   });
 
   $('.product-item__hover-icon').on('click', function () {
-    const modal = this.closest('.product-item__wrapper').querySelector('.product-item__modal')
+    const modal = this.closest('.product-item-wrapper').querySelector('.product-item__modal')
     modal.classList.add('product-item__modal--active');
   });
 
@@ -118,3 +107,17 @@ $(function () {
     $(this).prop("value", val);
   });
 })
+
+
+let ProductSliderBig = new Swiper('.product-item__modal-slider-big', {
+  loop: true,
+  slidesPerView: 1,
+  thumbs: {
+    swiper: {
+      el: '.product-item__modal-slider-small',
+      slidesPerView: 2,
+      slideToClickedSlide: true,
+      loop: true,
+    },
+  },
+});
