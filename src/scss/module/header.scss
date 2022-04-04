@@ -1,0 +1,211 @@
+.header {
+  @extend %montserrat-400;
+  color: #555;
+  margin-top: 12px;
+
+  &__top {
+    display: flex;
+    margin-bottom: 22px;
+  }
+
+  &__logo {
+    margin-right: 25px;
+    img {
+      margin-top: 13px;
+    }
+  }
+
+  &__top-content {
+    flex: 1;
+  }
+
+  &__top-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  &__top-links-inner {
+    display: flex;
+  }
+
+  &__city-btn {
+    background-color: transparent;
+    color: #777;
+    font-size: 16px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @extend %montserrat-500;
+    &::before {
+      content: url("../img/global/marker.svg");
+      margin-right: 8px;
+      height: 15px;
+    }
+    &::after {
+      content: url("../img/global/arrow-down.svg");
+      margin-left: 8px;
+      height: 20px;
+    }
+  }
+
+  &__phone-link {
+    color: #777;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @extend %montserrat-500;
+    &::before {
+      content: url("../img/global/phone.svg");
+      margin-right: 8px;
+      height: 16px;
+    }
+  }
+
+  &__info-list {
+    display: flex;
+  }
+
+  &__info-item {
+    position: relative;
+    & + & {
+      margin-left: 25px;
+    }
+  }
+
+  &__info-btn {
+    font-size: 17px;
+    color: #4b4b4b;
+    background-color: transparent;
+    transition: color 0.3s;
+  }
+
+  &__top-inner {
+    display: flex;
+  }
+
+  &__top-search {
+    flex: 1;
+    display: flex;
+  }
+
+  &__top-search-input {
+    margin-top: 1px;
+    border-bottom: 1px solid #a3a3a3;
+    height: 30px;
+    flex: 1;
+    font-size: 16px;
+    &::placeholder {
+      font-size: 16px;
+      color: #555;
+      @extend %montserrat-500;
+    }
+  }
+
+  &__top-search-submit {
+    border-bottom: 1px solid #a3a3a3;
+    padding-bottom: 9px;
+    padding-right: 6px;
+    background-color: transparent;
+  }
+
+  &__top-login {
+    display: flex;
+    align-items: end;
+    margin-left: 20px;
+    svg {
+      margin-right: 8px;
+      path {
+        fill: #007abe;
+      }
+    }
+  }
+
+  &__bottom {
+    border: 1px solid #dbdbdb;
+    border-left: none;
+    border-right: none;
+    padding: 8px 0;
+  }
+
+  &__bottom-list {
+    display: flex;
+    margin-top: 0;
+  }
+
+  &__bottom-item {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+
+    & + & {
+      margin-left: 51px;
+    }
+  }
+
+  &__bottom-link {
+    display: flex;
+    align-items: center;
+    &:hover {
+      text-shadow: 0 0 0.5px #333, 0 0 0.9px #333, 0 0 0.9px #333;
+    }
+    img {
+      margin-right: 15px;
+    }
+  }
+
+  &__bottom-link-icon {
+    width: 26px;
+    height: 27px;
+    margin-right: 15px;
+    fill: #007abe;
+  }
+  &__info-sublist {
+    position: absolute;
+    padding: 20px;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    font-size: 15px;
+    z-index: 5;
+    background: #fff;
+    color: #4b4b4b;
+    display: none;
+    &:hover {
+      display: block;
+    }
+    &--1 {
+      min-width: 269px;
+    }
+    &--2 {
+      min-width: 453px;
+      right: 0;
+    }
+    &--3 {
+      min-width: 230px;
+      right: 0;
+    }
+  }
+
+  &__info-sublist-item {
+    & + & {
+      margin-top: 20px;
+    }
+  }
+
+  &__info-sublist-link {
+    &:hover {
+      color: #007abe;
+      text-decoration: underline;
+    }
+  }
+
+  &__info-btn {
+    &:hover {
+      color: #007abe;
+      text-decoration: underline;
+      & + .header__info-sublist {
+        display: block;
+      }
+    }
+  }
+}

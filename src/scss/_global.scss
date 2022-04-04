@@ -1,0 +1,27 @@
+.container {
+  max-width: 1260px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.grey-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: #DBDBDB;
+  height: 1px;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+img {
+  object-fit: cover;
+}
+.main {
+  flex: 1;
+}
+.title {
+  font-size: 26px;
+  color: #4B4B4B;
+}

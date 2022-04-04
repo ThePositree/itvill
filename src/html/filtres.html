@@ -1,0 +1,139 @@
+<div class="filtres">
+  <div class="filtres__row">
+    <div class="filtres__title title">Фильтр</div>
+    <button class="filtres__reset" type="reset">Очистить</button>
+  </div>
+  <form class="filtres__form-search" action="#">
+    <input class="filtres__search-filter" type="search" placeholder="Поиск по фильтрам">
+  </form>
+  <form class="filtres__form" action="#">
+    <div class="filtres__price">
+      <h4 class="filtres__price-title">
+        Цена, Р
+      </h4>
+      <div class="filtres__price-range-inner">
+        <input class="filtres__price-range-from" type="text">
+        -
+        <input class="filtres__price-range-to" type="text">
+      </div>
+      <input class="filtres__price-range-slider" type="text" data-min="0" data-max="100">
+    </div>
+    <div class="filtres__availability">
+      <button class="filtres__show filtres__show--active" type="button">
+        Наличие товара
+        <img class="filtres__show-img" src="img/products/arrow-down.svg" alt="Посмотреть фильтр">
+        <img class="filtres__show-img-active" src="img/products/arrow-right-show.svg" alt="">
+      </button>
+      <div class="filtres__inner">
+        <label class="filtres__checkbox-inner">
+          <input class="filtres__checkbox-input" type="checkbox">
+          <div class="filtres__checkbox"></div>
+          <p class="filtres__checkbox-text">
+            Доступен самовывоз
+          </p>
+        </label>
+        <label class="filtres__checkbox-inner">
+          <input class="filtres__checkbox-input" type="checkbox">
+          <div class="filtres__checkbox"></div>
+          <p class="filtres__checkbox-text">
+            Забрать через 5 минут
+          </p>
+        </label>
+        <a class="filtres__availability-link" href="#">
+          В конкретном магазине
+          <img src="img/products/arrow-right.svg" alt="">
+        </a>
+      </div>
+    </div>
+    <div class="filtres__status">
+      <button class="filtres__show" type="button">
+        Статус товара
+        <img class="filtres__show-img" src="img/products/arrow-down.svg" alt="Посмотреть фильтр">
+        <img class="filtres__show-img-active" src="img/products/arrow-right-show.svg" alt="">
+      </button>
+      <div class="filtres__inner">
+        <label class="filtres__checkbox-inner">
+          <input class="filtres__checkbox-input" type="checkbox">
+          <div class="filtres__checkbox"></div>
+          <p class="filtres__checkbox-text">
+            Доступен самовывоз
+          </p>
+        </label>
+        <label class="filtres__checkbox-inner">
+          <input class="filtres__checkbox-input" type="checkbox">
+          <div class="filtres__checkbox"></div>
+          <p class="filtres__checkbox-text">
+            Новинки в каталоге
+          </p>
+        </label>
+      </div>
+    </div>
+    <div class="filtres__sale">
+      <button class="filtres__show" type="button">
+        Товары со скидкой
+        <img class="filtres__show-img" src="img/products/arrow-down.svg" alt="Посмотреть фильтр">
+        <img class="filtres__show-img-active" src="img/products/arrow-right-show.svg" alt="">
+      </button>
+      <div class="filtres__inner">
+        <label class="filtres__radio-inner">
+          <input name="sale" class="filtres__radio-input" type="radio">
+          <div class="filtres__radio"></div>
+          <p class="filtres__radio-text">
+            Любой
+          </p>
+        </label>
+        <label class="filtres__radio-inner">
+          <input name="sale" class="filtres__radio-input" type="radio">
+          <div class="filtres__radio"></div>
+          <p class="filtres__radio-text">
+            5% и больше
+          </p>
+        </label>
+        <label class="filtres__radio-inner">
+          <input name="sale" class="filtres__radio-input" type="radio">
+          <div class="filtres__radio"></div>
+          <p class="filtres__radio-text">
+            10% и больше
+          </p>
+        </label>
+      </div>
+    </div>
+    <div class="filtres__reviews">
+      <button class="filtres__show" type="button">
+        Оценка товара по отзывам
+        <img class="filtres__show-img" src="img/products/arrow-down.svg" alt="Посмотреть фильтр">
+        <img class="filtres__show-img-active" src="img/products/arrow-right-show.svg" alt="">
+      </button>
+      <div class="filtres__inner">
+        <label class="filtres__radio-inner">
+          <input name="reviews" class="filtres__radio-input" type="radio">
+          <div class="filtres__radio"></div>
+          <p class="filtres__radio-text">
+            Любой
+          </p>
+        </label>
+        <label class="filtres__radio-inner">
+          <input name="reviews" class="filtres__radio-input" type="radio">
+          <div class="filtres__radio"></div>
+          <p class="filtres__radio-text">
+            4,5 и выше
+          </p>
+        </label>
+        <label class="filtres__radio-inner">
+          <input name="reviews" class="filtres__radio-input" type="radio">
+          <div class="filtres__radio"></div>
+          <p class="filtres__radio-text">
+            4 и больше
+          </p>
+        </label>
+        <label class="filtres__radio-inner">
+          <input name="reviews" class="filtres__radio-input" type="radio">
+          <div class="filtres__radio"></div>
+          <p class="filtres__radio-text">
+            3,5 и больше
+          </p>
+        </label>
+      </div>
+    </div>
+  </form>
+</div>

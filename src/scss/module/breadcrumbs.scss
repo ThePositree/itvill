@@ -1,0 +1,26 @@
+.breadcrumbs {
+  margin-bottom: 15px;
+		&__list {
+      display: flex;
+		}
+
+		&__item {
+      font-size: 15px;
+      @extend %montserrat-400;
+      color: #007ABE;
+      display: flex;
+      align-items: center;
+      margin-top: 35px;
+      & + & {
+        margin-left: 10px;
+        &::before {
+          content: url('../img/global/arrow-right.svg');
+          margin-right: 10px;
+          height: 17px;
+        }
+      }
+      &:last-child {
+        color: #9A9A9A;
+      }
+		}
+}
