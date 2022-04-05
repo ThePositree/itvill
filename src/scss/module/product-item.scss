@@ -263,29 +263,24 @@
     justify-content: space-between;
   }
   &__modal-slider-big {
-    img {
-      width: 100%;
-      height: 100%;
-    }
-    &.swiper {
-      width: 323px;
-      height: 292px;
-    }
+    width: 323px;
+    height: 292px;
+    overflow: hidden;
   }
   &__modal-slider-big-item {
     width: 323px;
     height: 292px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
   }
   &__modal-slider-small {
-    &.swiper {
-      width: 323px;
-      height: 60px;
-    }
+    display: flex;
   }
   &__modal-slider-small-item {
     width: 60px;
     height: 60px;
-    padding: 0 5px;
     img {
       width: 100%;
       height: 100%;

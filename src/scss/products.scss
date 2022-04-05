@@ -1,5 +1,4 @@
 @import "libs/ion.rangeSlider.min";
-@import "libs/swiper-bundle.min";
 @import "libs/jquery.formstyler";
 @import "libs/jquery.formstyler.theme";
 @import "reset";
@@ -12,6 +11,7 @@
 @import "module/product-item";
 @import "module/sorting";
 @import "module/filtres";
+@import "module/menu-bar";
 .products {
   @extend %montserrat-600;
   &__sorting {
@@ -174,3 +174,5 @@
     }
   }
 }
+
+@import "media";
