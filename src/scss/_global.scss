@@ -25,3 +25,10 @@ img {
   font-size: 26px;
   color: #4B4B4B;
 }
+
+
+.swiper-slide {
+  .product-item__img-inner {
+    cursor: pointer;
+  }
+}

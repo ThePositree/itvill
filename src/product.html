@@ -15,32 +15,64 @@
         <div class="product__top product-item">
           <div class="product__top-wrapper">
             <div class="product__sliders">
-              <div class="product__slider-big">
-                <div class="product-item__img-inner">
-                  <img class="product-item__img-bg" src="img/product-item/item-bg-1.jpg" alt="">
-                  <img class="product-item__img" src="img/product-item/item-1.png" alt="">
+              <div class="product__slider-big swiper">
+                <div class="product__slider-big-inner swiper-wrapper">
+                  <div class="product__slider-big-item swiper-slide">
+                    <div class="product-item__img-inner">
+                      <img class="product-item__img-bg" src="img/product-item/item-bg-1.jpg" alt="">
+                      <img class="product-item__img" src="img/product-item/item-1.png" alt="">
+                    </div>
+                  </div>
+                  <div class="product__slider-big-item swiper-slide">
+                    <img src="img/viewing/small-slider/item-1.jpg" alt="">
+                  </div>
+                  <div class="product__slider-big-item swiper-slide">
+                    <img src="img/viewing/small-slider/item-2.jpg" alt="">
+                  </div>
+                  <div class="product__slider-big-item swiper-slide">
+                    <img src="img/viewing/small-slider/item-3.jpg" alt="">
+                  </div>
+                  <div class="product__slider-big-item swiper-slide">
+                    <img src="img/viewing/small-slider/item-3.jpg" alt="">
+                  </div>
+                  <div class="product__slider-big-item swiper-slide">
+                    <img src="img/viewing/small-slider/item-3.jpg" alt="">
+                  </div>
+                  <div class="product__slider-big-item swiper-slide">
+                    <img src="img/viewing/small-slider/item-3.jpg" alt="">
+                  </div>
                 </div>
               </div>
-              <div class="product__slider-small">
-                <div class="product-item__modal-slider-small-item">
-                  <img src="img/viewing/small-slider/item-1.jpg" alt="">
-                </div>
-                <div class="product-item__modal-slider-small-item">
-                  <img src="img/viewing/small-slider/item-1.jpg" alt="">
-                </div>
-                <div class="product-item__modal-slider-small-item">
-                  <img src="img/viewing/small-slider/item-1.jpg" alt="">
-                </div>
-                <div class="product-item__modal-slider-small-item">
-                  <img src="img/viewing/small-slider/item-1.jpg" alt="">
-                </div>
-                <div class="product-item__modal-slider-small-item">
-                  <img src="img/viewing/small-slider/item-1.jpg" alt="">
-                </div>
-                <div class="product-item__modal-slider-small-item">
-                  <img src="img/viewing/small-slider/item-1.jpg" alt="">
+              <div class="swiper-button-prev"></div>
+              <div class="product__slider-small swiper">
+                <div class="product__slider-small-inner swiper-wrapper">
+                  <div class="product__slider-small-item swiper-slide">
+                    <div class="product-item__img-inner">
+                      <img class="product-item__img-bg" src="img/product-item/item-bg-1.jpg" alt="">
+                      <img class="product-item__img" src="img/product-item/item-1.png" alt="">
+                    </div>
+                  </div>
+                  <div class="product__slider-small-item swiper-slide">
+                    <img src="img/viewing/small-slider/item-1.jpg" alt="">
+                  </div>
+                  <div class="product__slider-small-item swiper-slide">
+                    <img src="img/viewing/small-slider/item-2.jpg" alt="">
+                  </div>
+                  <div class="product__slider-small-item swiper-slide">
+                    <img src="img/viewing/small-slider/item-3.jpg" alt="">
+                  </div>
+                  <div class="product__slider-small-item swiper-slide">
+                    <img src="img/viewing/small-slider/item-3.jpg" alt="">
+                  </div>
+                  <div class="product__slider-small-item swiper-slide">
+                    <img src="img/viewing/small-slider/item-3.jpg" alt="">
+                  </div>
+                  <div class="product__slider-small-item swiper-slide">
+                    <img src="img/viewing/small-slider/item-3.jpg" alt="">
+                  </div>
                 </div>
               </div>
+              <div class="swiper-button-next"></div>
             </div>
             <div class="product__top-content">
               <h2 class="product-item__title">
@@ -53,20 +85,20 @@
               </p>
               <form class="product__top-form" action="#">
                 <div class="product__top-form-wrapper">
-                <div class="product__form-color">
-                  <span class="product__form-color-text">
-                    Цвет корпуса:
-                  </span>
-                  <select class="product__form-color-select" name="color">
-                    <option value="black">Чёрный</option>
-                    <option value="white">Белый</option>
-                    <option value="red">Красный</option>
-                  </select>
-                </div>
-                <div class="product__form-number">
-                  <span class="product__form-number-text">Количество:</span>
-                  <input class="product__form-number-input" type="number">
-                </div>
+                  <div class="product__form-color">
+                    <span class="product__form-color-text">
+                      Цвет корпуса:
+                    </span>
+                    <select class="product__form-color-select" name="color">
+                      <option value="black">Чёрный</option>
+                      <option value="white">Белый</option>
+                      <option value="red">Красный</option>
+                    </select>
+                  </div>
+                  <div class="product__form-number">
+                    <span class="product__form-number-text">Количество:</span>
+                    <input class="product__form-number-input" type="number">
+                  </div>
                 </div>
                 <div class="product__form-price">
                   <span class="product__form-price-text">Итого:</span>
@@ -187,7 +219,7 @@
               <button class="category__name">
                 <img class="category__icon" src="img/category/icon-2.svg" alt="">
                 <span>Охрано-Пожарная
-                Сигнализация</span>
+                  Сигнализация</span>
                 <img src="img/products/arrow-right-show.svg" alt="">
               </button>
             </div>
@@ -202,7 +234,7 @@
               <button class="category__name">
                 <img class="category__icon" src="img/category/icon-4.svg" alt="">
                 <span>Система оповещения и
-                управления эвакуацией</span>
+                  управления эвакуацией</span>
                 <img src="img/products/arrow-right-show.svg" alt="">
               </button>
             </div>
@@ -269,14 +301,16 @@
             </div>
             <div class="product__with-inner">
               <div class="product-item-wrapper">
-                <div class="product-item product-item--no-availability" href="#">
-                  <div class="product-item__img-inner">
-                    <img class="product-item__img-bg" src="img/product-item/item-bg-1.jpg" alt="">
-                    <img class="product-item__img" src="img/product-item/item-1.png" alt="">
-                    <div class="product-item__img-hover"></div>
-                    <button class="product-item__hover-icon">
-                      <img src="img/product-item/hover.svg" alt="Посмореть товар">
-                    </button>
+                <div class="product-item product-item--no-availability">
+                  <div class="product-item__img-wrapper">
+                    <div class="product-item__img-inner">
+                      <img class="product-item__img-bg" src="img/product-item/item-bg-1.jpg" alt="">
+                      <img class="product-item__img" src="img/product-item/item-1.png" alt="">
+                      <div class="product-item__img-hover"></div>
+                      <button class="product-item__hover-icon">
+                        <img src="img/product-item/hover.svg" alt="Посмореть товар">
+                      </button>
+                    </div>
                   </div>
                   <div class="product-item__content">
                     <button class="product-item__favorites">
@@ -330,46 +364,52 @@
                     <div class="product-item__modal-content">
                       <div class="product-item__modal-left">
                         <div class="product-item__modal-sliders">
-                          <div class="product-item__modal-slider-big">
-                            <div class="product-item__modal-slider-big-item">
-                              <img src="img/viewing/big-slider/item-1.jpg" alt="">
-                            </div>
-                            <div class="product-item__modal-slider-big-item">
-                              <img src="img/viewing/big-slider/item-2.jpg" alt="">
-                            </div>
-                            <div class="product-item__modal-slider-big-item">
-                              <img src="img/viewing/big-slider/item-3.jpg" alt="">
-                            </div>
-                            <div class="product-item__modal-slider-big-item">
-                              <img src="img/viewing/big-slider/item-3.jpg" alt="">
-                            </div>
-                            <div class="product-item__modal-slider-big-item">
-                              <img src="img/viewing/big-slider/item-3.jpg" alt="">
-                            </div>
-                            <div class="product-item__modal-slider-big-item">
-                              <img src="img/viewing/big-slider/item-3.jpg" alt="">
-                            </div>
-                          </div>
-                          <div class="product-item__modal-slider-small">
-                            <div class="product-item__modal-slider-small-item">
-                              <img src="img/viewing/small-slider/item-1.jpg" alt="">
-                            </div>
-                            <div class="product-item__modal-slider-small-item">
-                              <img src="img/viewing/small-slider/item-2.jpg" alt="">
-                            </div>
-                            <div class="product-item__modal-slider-small-item">
-                              <img src="img/viewing/small-slider/item-3.jpg" alt="">
-                            </div>
-                            <div class="product-item__modal-slider-small-item">
-                              <img src="img/viewing/small-slider/item-3.jpg" alt="">
-                            </div>
-                            <div class="product-item__modal-slider-small-item">
-                              <img src="img/viewing/small-slider/item-3.jpg" alt="">
-                            </div>
-                            <div class="product-item__modal-slider-small-item">
-                              <img src="img/viewing/small-slider/item-3.jpg" alt="">
+                          <div class="product-item__modal-slider-big swiper">
+                            <div class="product-item__modal-slider-big-inner swiper-wrapper">
+                              <div class="product-item__modal-slider-big-item swiper-slide">
+                                <img src="img/viewing/big-slider/item-1.jpg" alt="">
+                              </div>
+                              <div class="product-item__modal-slider-big-item swiper-slide">
+                                <img src="img/viewing/big-slider/item-2.jpg" alt="">
+                              </div>
+                              <div class="product-item__modal-slider-big-item swiper-slide">
+                                <img src="img/viewing/big-slider/item-3.jpg" alt="">
+                              </div>
+                              <div class="product-item__modal-slider-big-item swiper-slide">
+                                <img src="img/viewing/big-slider/item-3.jpg" alt="">
+                              </div>
+                              <div class="product-item__modal-slider-big-item swiper-slide">
+                                <img src="img/viewing/big-slider/item-3.jpg" alt="">
+                              </div>
+                              <div class="product-item__modal-slider-big-item swiper-slide">
+                                <img src="img/viewing/big-slider/item-3.jpg" alt="">
+                              </div>
                             </div>
                           </div>
+                          <div class="swiper-button-prev"></div>
+                          <div class="product-item__modal-slider-small swiper">
+                            <div class="product-item__modal-slider-small-inner swiper-wrapper">
+                              <div class="product-item__modal-slider-small-item swiper-slide">
+                                <img src="img/viewing/small-slider/item-1.jpg" alt="">
+                              </div>
+                              <div class="product-item__modal-slider-small-item swiper-slide">
+                                <img src="img/viewing/small-slider/item-2.jpg" alt="">
+                              </div>
+                              <div class="product-item__modal-slider-small-item swiper-slide">
+                                <img src="img/viewing/small-slider/item-3.jpg" alt="">
+                              </div>
+                              <div class="product-item__modal-slider-small-item swiper-slide">
+                                <img src="img/viewing/small-slider/item-3.jpg" alt="">
+                              </div>
+                              <div class="product-item__modal-slider-small-item swiper-slide">
+                                <img src="img/viewing/small-slider/item-3.jpg" alt="">
+                              </div>
+                              <div class="product-item__modal-slider-small-item swiper-slide">
+                                <img src="img/viewing/small-slider/item-3.jpg" alt="">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-button-next"></div>
                           <button class="product-item__favorites">
                             <svg>
                               <use xlink:href="img/icons/icons.svg#favorites"></use>
@@ -447,7 +487,7 @@
                           </div>
                           <div class="product-item__modal-characteristics">
                             <span>Горизонтальный угол обзора</span>
-                            <span>80&deg</span>
+                            <span>80&deg;</span>
                           </div>
                         </div>
                       </div>
@@ -456,14 +496,16 @@
                 </div>
               </div>
               <div class="product-item-wrapper">
-                <div class="product-item product-item--no-availability" href="#">
-                  <div class="product-item__img-inner">
-                    <img class="product-item__img-bg" src="img/product-item/item-bg-1.jpg" alt="">
-                    <img class="product-item__img" src="img/product-item/item-1.png" alt="">
-                    <div class="product-item__img-hover"></div>
-                    <button class="product-item__hover-icon">
-                      <img src="img/product-item/hover.svg" alt="Посмореть товар">
-                    </button>
+                <div class="product-item product-item--no-availability">
+                  <div class="product-item__img-wrapper">
+                    <div class="product-item__img-inner">
+                      <img class="product-item__img-bg" src="img/product-item/item-bg-1.jpg" alt="">
+                      <img class="product-item__img" src="img/product-item/item-1.png" alt="">
+                      <div class="product-item__img-hover"></div>
+                      <button class="product-item__hover-icon">
+                        <img src="img/product-item/hover.svg" alt="Посмореть товар">
+                      </button>
+                    </div>
                   </div>
                   <div class="product-item__content">
                     <button class="product-item__favorites">
@@ -517,46 +559,52 @@
                     <div class="product-item__modal-content">
                       <div class="product-item__modal-left">
                         <div class="product-item__modal-sliders">
-                          <div class="product-item__modal-slider-big">
-                            <div class="product-item__modal-slider-big-item">
-                              <img src="img/viewing/big-slider/item-1.jpg" alt="">
-                            </div>
-                            <div class="product-item__modal-slider-big-item">
-                              <img src="img/viewing/big-slider/item-2.jpg" alt="">
-                            </div>
-                            <div class="product-item__modal-slider-big-item">
-                              <img src="img/viewing/big-slider/item-3.jpg" alt="">
-                            </div>
-                            <div class="product-item__modal-slider-big-item">
-                              <img src="img/viewing/big-slider/item-3.jpg" alt="">
-                            </div>
-                            <div class="product-item__modal-slider-big-item">
-                              <img src="img/viewing/big-slider/item-3.jpg" alt="">
-                            </div>
-                            <div class="product-item__modal-slider-big-item">
-                              <img src="img/viewing/big-slider/item-3.jpg" alt="">
-                            </div>
-                          </div>
-                          <div class="product-item__modal-slider-small">
-                            <div class="product-item__modal-slider-small-item">
-                              <img src="img/viewing/small-slider/item-1.jpg" alt="">
-                            </div>
-                            <div class="product-item__modal-slider-small-item">
-                              <img src="img/viewing/small-slider/item-2.jpg" alt="">
-                            </div>
-                            <div class="product-item__modal-slider-small-item">
-                              <img src="img/viewing/small-slider/item-3.jpg" alt="">
-                            </div>
-                            <div class="product-item__modal-slider-small-item">
-                              <img src="img/viewing/small-slider/item-3.jpg" alt="">
-                            </div>
-                            <div class="product-item__modal-slider-small-item">
-                              <img src="img/viewing/small-slider/item-3.jpg" alt="">
-                            </div>
-                            <div class="product-item__modal-slider-small-item">
-                              <img src="img/viewing/small-slider/item-3.jpg" alt="">
+                          <div class="product-item__modal-slider-big swiper">
+                            <div class="product-item__modal-slider-big-inner swiper-wrapper">
+                              <div class="product-item__modal-slider-big-item swiper-slide">
+                                <img src="img/viewing/big-slider/item-1.jpg" alt="">
+                              </div>
+                              <div class="product-item__modal-slider-big-item swiper-slide">
+                                <img src="img/viewing/big-slider/item-2.jpg" alt="">
+                              </div>
+                              <div class="product-item__modal-slider-big-item swiper-slide">
+                                <img src="img/viewing/big-slider/item-3.jpg" alt="">
+                              </div>
+                              <div class="product-item__modal-slider-big-item swiper-slide">
+                                <img src="img/viewing/big-slider/item-3.jpg" alt="">
+                              </div>
+                              <div class="product-item__modal-slider-big-item swiper-slide">
+                                <img src="img/viewing/big-slider/item-3.jpg" alt="">
+                              </div>
+                              <div class="product-item__modal-slider-big-item swiper-slide">
+                                <img src="img/viewing/big-slider/item-3.jpg" alt="">
+                              </div>
                             </div>
                           </div>
+                          <div class="swiper-button-prev"></div>
+                          <div class="product-item__modal-slider-small swiper">
+                            <div class="product-item__modal-slider-small-inner swiper-wrapper">
+                              <div class="product-item__modal-slider-small-item swiper-slide">
+                                <img src="img/viewing/small-slider/item-1.jpg" alt="">
+                              </div>
+                              <div class="product-item__modal-slider-small-item swiper-slide">
+                                <img src="img/viewing/small-slider/item-2.jpg" alt="">
+                              </div>
+                              <div class="product-item__modal-slider-small-item swiper-slide">
+                                <img src="img/viewing/small-slider/item-3.jpg" alt="">
+                              </div>
+                              <div class="product-item__modal-slider-small-item swiper-slide">
+                                <img src="img/viewing/small-slider/item-3.jpg" alt="">
+                              </div>
+                              <div class="product-item__modal-slider-small-item swiper-slide">
+                                <img src="img/viewing/small-slider/item-3.jpg" alt="">
+                              </div>
+                              <div class="product-item__modal-slider-small-item swiper-slide">
+                                <img src="img/viewing/small-slider/item-3.jpg" alt="">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-button-next"></div>
                           <button class="product-item__favorites">
                             <svg>
                               <use xlink:href="img/icons/icons.svg#favorites"></use>
@@ -634,7 +682,7 @@
                           </div>
                           <div class="product-item__modal-characteristics">
                             <span>Горизонтальный угол обзора</span>
-                            <span>80&deg</span>
+                            <span>80&deg;</span>
                           </div>
                         </div>
                       </div>
@@ -643,14 +691,16 @@
                 </div>
               </div>
               <div class="product-item-wrapper">
-                <div class="product-item product-item--no-availability" href="#">
-                  <div class="product-item__img-inner">
-                    <img class="product-item__img-bg" src="img/product-item/item-bg-1.jpg" alt="">
-                    <img class="product-item__img" src="img/product-item/item-1.png" alt="">
-                    <div class="product-item__img-hover"></div>
-                    <button class="product-item__hover-icon">
-                      <img src="img/product-item/hover.svg" alt="Посмореть товар">
-                    </button>
+                <div class="product-item product-item--no-availability">
+                  <div class="product-item__img-wrapper">
+                    <div class="product-item__img-inner">
+                      <img class="product-item__img-bg" src="img/product-item/item-bg-1.jpg" alt="">
+                      <img class="product-item__img" src="img/product-item/item-1.png" alt="">
+                      <div class="product-item__img-hover"></div>
+                      <button class="product-item__hover-icon">
+                        <img src="img/product-item/hover.svg" alt="Посмореть товар">
+                      </button>
+                    </div>
                   </div>
                   <div class="product-item__content">
                     <button class="product-item__favorites">
@@ -704,46 +754,52 @@
                     <div class="product-item__modal-content">
                       <div class="product-item__modal-left">
                         <div class="product-item__modal-sliders">
-                          <div class="product-item__modal-slider-big">
-                            <div class="product-item__modal-slider-big-item">
-                              <img src="img/viewing/big-slider/item-1.jpg" alt="">
-                            </div>
-                            <div class="product-item__modal-slider-big-item">
-                              <img src="img/viewing/big-slider/item-2.jpg" alt="">
-                            </div>
-                            <div class="product-item__modal-slider-big-item">
-                              <img src="img/viewing/big-slider/item-3.jpg" alt="">
-                            </div>
-                            <div class="product-item__modal-slider-big-item">
-                              <img src="img/viewing/big-slider/item-3.jpg" alt="">
-                            </div>
-                            <div class="product-item__modal-slider-big-item">
-                              <img src="img/viewing/big-slider/item-3.jpg" alt="">
-                            </div>
-                            <div class="product-item__modal-slider-big-item">
-                              <img src="img/viewing/big-slider/item-3.jpg" alt="">
-                            </div>
-                          </div>
-                          <div class="product-item__modal-slider-small">
-                            <div class="product-item__modal-slider-small-item">
-                              <img src="img/viewing/small-slider/item-1.jpg" alt="">
-                            </div>
-                            <div class="product-item__modal-slider-small-item">
-                              <img src="img/viewing/small-slider/item-2.jpg" alt="">
-                            </div>
-                            <div class="product-item__modal-slider-small-item">
-                              <img src="img/viewing/small-slider/item-3.jpg" alt="">
-                            </div>
-                            <div class="product-item__modal-slider-small-item">
-                              <img src="img/viewing/small-slider/item-3.jpg" alt="">
-                            </div>
-                            <div class="product-item__modal-slider-small-item">
-                              <img src="img/viewing/small-slider/item-3.jpg" alt="">
-                            </div>
-                            <div class="product-item__modal-slider-small-item">
-                              <img src="img/viewing/small-slider/item-3.jpg" alt="">
+                          <div class="product-item__modal-slider-big swiper">
+                            <div class="product-item__modal-slider-big-inner swiper-wrapper">
+                              <div class="product-item__modal-slider-big-item swiper-slide">
+                                <img src="img/viewing/big-slider/item-1.jpg" alt="">
+                              </div>
+                              <div class="product-item__modal-slider-big-item swiper-slide">
+                                <img src="img/viewing/big-slider/item-2.jpg" alt="">
+                              </div>
+                              <div class="product-item__modal-slider-big-item swiper-slide">
+                                <img src="img/viewing/big-slider/item-3.jpg" alt="">
+                              </div>
+                              <div class="product-item__modal-slider-big-item swiper-slide">
+                                <img src="img/viewing/big-slider/item-3.jpg" alt="">
+                              </div>
+                              <div class="product-item__modal-slider-big-item swiper-slide">
+                                <img src="img/viewing/big-slider/item-3.jpg" alt="">
+                              </div>
+                              <div class="product-item__modal-slider-big-item swiper-slide">
+                                <img src="img/viewing/big-slider/item-3.jpg" alt="">
+                              </div>
                             </div>
                           </div>
+                          <div class="swiper-button-prev"></div>
+                          <div class="product-item__modal-slider-small swiper">
+                            <div class="product-item__modal-slider-small-inner swiper-wrapper">
+                              <div class="product-item__modal-slider-small-item swiper-slide">
+                                <img src="img/viewing/small-slider/item-1.jpg" alt="">
+                              </div>
+                              <div class="product-item__modal-slider-small-item swiper-slide">
+                                <img src="img/viewing/small-slider/item-2.jpg" alt="">
+                              </div>
+                              <div class="product-item__modal-slider-small-item swiper-slide">
+                                <img src="img/viewing/small-slider/item-3.jpg" alt="">
+                              </div>
+                              <div class="product-item__modal-slider-small-item swiper-slide">
+                                <img src="img/viewing/small-slider/item-3.jpg" alt="">
+                              </div>
+                              <div class="product-item__modal-slider-small-item swiper-slide">
+                                <img src="img/viewing/small-slider/item-3.jpg" alt="">
+                              </div>
+                              <div class="product-item__modal-slider-small-item swiper-slide">
+                                <img src="img/viewing/small-slider/item-3.jpg" alt="">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-button-next"></div>
                           <button class="product-item__favorites">
                             <svg>
                               <use xlink:href="img/icons/icons.svg#favorites"></use>
@@ -821,7 +877,7 @@
                           </div>
                           <div class="product-item__modal-characteristics">
                             <span>Горизонтальный угол обзора</span>
-                            <span>80&deg</span>
+                            <span>80&deg;</span>
                           </div>
                         </div>
                       </div>
@@ -840,6 +896,7 @@
   <script src="js/libs/jquery-3.6.0.min.js"></script>
   <script src="js/libs/ion.rangeSlider.min.js"></script>
   <script src="js/libs/jquery.formstyler.min.js"></script>
+  <script src="js/libs/swiper-bundle.min.js"></script>
   <script src="js/app.min.js"></script>
 </body>
 

@@ -9,12 +9,8 @@ $(function () {
     $(this).addClass('menu-bar__cart--active');
   });
 
-
-
-
-  $('.product__form-color-select').styler()
-  $('.product__form-number-input').styler()
-
+  $('.product__form-color-select').styler();
+  $('.product__form-number-input').styler();
 
   $('.product__tab').on('click', function () {
     $('.product__tab').removeClass('product__tab--active')
@@ -44,11 +40,6 @@ $(function () {
 
   $('.product-item__modal-close').on('click', function () {
     $('.product-item__modal').removeClass('product-item__modal--active');
-  });
-
-  $('.product-item__hover-icon').on('click', function () {
-    const modal = this.closest('.product-item-wrapper').querySelector('.product-item__modal')
-    modal.classList.add('product-item__modal--active');
   });
 
   $('.products__btn-show').on('click', function () {
@@ -141,4 +132,59 @@ $(function () {
 
     $(this).prop("value", val);
   });
+
+  $('.product-item__hover-icon').on('click', function () {
+    const modal = this.closest('.product-item-wrapper').querySelector('.product-item__modal')
+    modal.classList.add('product-item__modal--active');
+    const sliderBig = modal.querySelector('.product-item__modal-slider-big');
+    const sliderSmall = modal.querySelector('.product-item__modal-slider-small');
+    const swiper = new Swiper(sliderSmall, {
+      loop: true,
+      spaceBetween: 8,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesProgress: true,
+      mousewheel: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+    const swiper2 = new Swiper(sliderBig, {
+      loop: true,
+      effect: "fade",
+      simulateTouch: false,
+      thumbs: {
+        swiper: swiper,
+      },
+    });
+  });
+
+
+  $('.product-item__modal-cart-number').val(0)
+  $('.product__form-number-input').val(0)
 })
+
+const productSliderBig = document.querySelector('.product__slider-big');
+const productSliderSmall = document.querySelector('.product__slider-small');
+console.log(productSliderBig)
+const productSwiperBig = new Swiper(productSliderSmall, {
+  loop: true,
+  spaceBetween: 8,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesProgress: true,
+  mousewheel: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+const productSwiperSmall = new Swiper(productSliderBig, {
+  loop: true,
+  effect: "fade",
+  simulateTouch: false,
+  thumbs: {
+    swiper: productSwiperBig,
+  },
+});

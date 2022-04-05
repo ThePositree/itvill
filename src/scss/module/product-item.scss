@@ -18,13 +18,15 @@
   &__img-hover {
     transition: background-color 0.3s;
   }
-
+  &__img-wrapper {
+    height: 250px;
+  }
   &__img-inner {
     position: relative;
     cursor: default;
   }
   &__img-bg {
-    height: 250px;
+    height: 100%;
     width: 100%;
     border-radius: 8px 8px 0 0;
   }
@@ -166,7 +168,7 @@
       top: 0;
       left: 0;
       right: 0;
-      height: 250px;
+      height: 100%;
     }
     .product-item__hover-icon {
       opacity: 1;
@@ -213,6 +215,27 @@
       font-size: 14px;
       margin-bottom: 16px;
     }
+    .swiper-button-next,
+    .swiper-button-prev {
+      top: auto;
+      bottom: 10px;
+      width: auto;
+      height: auto;
+    }
+    .swiper-button-next {
+      right: 0;
+      left: auto;
+      &::after {
+        content: url("../img/global/arrow-right-slider.svg");
+      }
+    }
+    .swiper-button-prev {
+      right: auto;
+      left: 0;
+      &::after {
+        content: url("../img/global/arrow-left-slider.svg");
+      }
+    }
   }
   &__modal-body {
     background-color: #fff;
@@ -250,6 +273,7 @@
   }
   &__modal-sliders {
     position: relative;
+    user-select: none;
   }
   &__modal-left {
     flex: 0 0 323px;
@@ -273,14 +297,18 @@
     img {
       width: 100%;
       height: 100%;
+      border-radius: 8px 8px 0 0;
     }
   }
   &__modal-slider-small {
     display: flex;
+    margin-top: 15px;
+    width: 272px;
   }
   &__modal-slider-small-item {
     width: 60px;
     height: 60px;
+    cursor: pointer;
     img {
       width: 100%;
       height: 100%;
