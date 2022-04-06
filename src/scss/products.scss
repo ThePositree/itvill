@@ -102,12 +102,15 @@
     overflow: hidden;
     width: 0;
     transition: width 0.3s;
+    white-space: nowrap;
   }
   &__filtres--active {
     width: 290px;
+    margin-left: 20px;
   }
   &__items--filtres {
     grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
   }
   &__items--list {
     grid-template-columns: 1fr;

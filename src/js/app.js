@@ -5,8 +5,13 @@ nikfunctions.isWebp();
 
 $(function () {
 
+  $('.header__top-search-submit').on('click', function (e) {
+    e.preventDefault;
+    $('.header__top-search-list-wrapper').toggleClass('header__top-search-list-wrapper--active');
+  });
+
   $('.menu-bar__cart').on('click', function () {
-    $(this).addClass('menu-bar__cart--active');
+    $(this).toggleClass('menu-bar__cart--active');
   });
 
   $('.product__form-color-select').styler();
@@ -34,12 +39,11 @@ $(function () {
     $('.product__tab-content--video').addClass('product__tab-content--active');
   });
 
-
-
   $('.product-item__modal-cart-number').styler();
 
   $('.product-item__modal-close').on('click', function () {
     $('.product-item__modal').removeClass('product-item__modal--active');
+    document.querySelector('body').style.overflow = 'scroll';
   });
 
   $('.products__btn-show').on('click', function () {
@@ -136,6 +140,7 @@ $(function () {
   $('.product-item__hover-icon').on('click', function () {
     const modal = this.closest('.product-item-wrapper').querySelector('.product-item__modal')
     modal.classList.add('product-item__modal--active');
+    document.querySelector('body').style.overflow = 'hidden';
     const sliderBig = modal.querySelector('.product-item__modal-slider-big');
     const sliderSmall = modal.querySelector('.product-item__modal-slider-small');
     const swiper = new Swiper(sliderSmall, {
@@ -163,6 +168,21 @@ $(function () {
 
   $('.product-item__modal-cart-number').val(0)
   $('.product__form-number-input').val(0)
+
+  function checkWidth() {
+    var windowWidth = $('body').innerWidth(),
+      elem = $(".products__items");
+    if (windowWidth < 992) {
+      elem.removeClass('products__items--list');
+    }
+  }
+
+  checkWidth();
+
+  $(window).resize(function () {
+    checkWidth();
+  });
+
 })
 
 const productSliderBig = document.querySelector('.product__slider-big');

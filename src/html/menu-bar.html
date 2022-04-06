@@ -1,176 +1,477 @@
 <div class="menu-bar">
   <div class="menu-bar__wrapper">
-    <div class="menu-bar__cart menu-bar__block">
-      <div class="menu-bar__cart-icon-inner">
-        <svg class="menu-bar__cart-icon menu-bar__icon">
-          <use xlink:href="img/icons/icons.svg#menu-bar-cart"></use>
-        </svg>
-        <span class="menu-bar__cart-num">3</span>
+    <div class="menu-bar__cart-inner menu-bar__cart-inner--empty">
+      <div class="menu-bar__cart menu-bar__block">
+        <div class="menu-bar__cart-icon-inner">
+          <svg class="menu-bar__cart-icon menu-bar__icon">
+            <use xlink:href="img/icons/icons.svg#menu-bar-cart"></use>
+          </svg>
+          <span class="menu-bar__cart-num">3</span>
+        </div>
+        <span class="menu-bar__cart-price">54 258 руб</span>
+        <span class="menu-bar__cart-amount">
+          Корзина заказа (3 товара)
+        </span>
+        <span class="menu-bar__cart-amount-empty">
+          Корзина заказа
+        </span>
       </div>
-      <span class="menu-bar__cart-price">54 258 руб</span>
-      <div class="menu-bar__cart-show">
+      <form class="menu-bar__cart-show" action="#">
         <button class="menu-bar__cart-reset">
           ОЧИСТИТЬ КОРЗИНУ
         </button>
-        <div class="menu-bar__cart-product products__items products__items--list">
-          <div class="product-item">
-            <div class="product-item__img-inner">
-              <img class="product-item__img-bg" src="img/product-item/item-bg-1.jpg" alt="">
-              <img class="product-item__img" src="img/product-item/item-1.png" alt="">
-            </div>
-            <div class="product-item__content">
-              <div class="menu-bar__product-item-inner">
+        <div class="menu-bar__cart-items-list">
+          <div class="product-item-wrapper">
+            <div class="product-item product-item--no-availability">
+              <div class="product-item__img-wrapper">
+                <div class="product-item__img-inner">
+                  <img class="product-item__img-bg" src="img/product-item/item-bg-1.jpg" alt="">
+                  <img class="product-item__img" src="img/product-item/item-1.png" alt="">
+                  <div class="product-item__img-hover"></div>
+                  <a class="product-item__hover-icon" href="product.html">
+                    <img src="img/product-item/hover.svg" alt="Посмореть товар">
+                  </a>
+                </div>
+              </div>
+              <div class="product-item__content">
                 <a class="product-item__title-link" href="product.html">
                   <h2 class="product-item__title">
                     Поворотная Wi-Fi камера
                   </h2>
                 </a>
-                <div class="menu-bar__product-item-btn">
-                  <button class="menu-bar__product-item-copy">
-                    <img src="img/products/copy.svg" alt="">
-                  </button>
-                  <button class="menu-bar__product-item-like">
-                    <svg>
-                      <use xlink:href="img/icons/icons.svg#favorites"></use>
-                    </svg>
-                  </button>
-                  <button class="menu-bar__product-item-del">
-                    <img src="img/products/del.svg" alt="">
-                  </button>
+                <span class="product-item__art">Арт.: RV-3416</span>
+                <p class="product-item__desc">
+                  W-Fi поворотная видеокамера 355°,
+                  Full HD 1080p, 2 МП, microSD до 128 GB
+                </p>
+                <div class="product-item__bottom">
+                  <div class="product-item__price-inner">
+                    <span class="product-item__price-one">
+                      3 190
+                      <svg class="product-item__rub-price">
+                        <use xlink:href="img/icons/icons.svg#price"></use>
+                      </svg>
+                    </span>
+                    <span class="product-item__price-all">
+                      /6 380
+                      <svg class="product-item__rub-price">
+                        <use xlink:href="img/icons/icons.svg#price"></use>
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="product-item__inner-cart">
+                    <span class="product-item__availability">В наличии</span>
+                    <div class="product-item__modal-cart-inner">
+                      <span class="product-item__modal-cart-text">Кол-во:</span>
+                      <input class="product-item__modal-cart-number" type="number">
+                    </div>
+                  </div>
                 </div>
               </div>
-              <span class="product-item__art">Арт.: RV-3416</span>
-              <div class="product-item__bottom">
-                <div class="product-item__price-inner">
-                  <span class="product-item__price">
-                    3 190
-                    <svg class="product-item__rub-price">
-                      <use xlink:href="img/icons/icons.svg#price"></use>
-                    </svg>
-                  </span>
-                  <span class="product-item__price-all">
-                    6 380
-                    <svg class="product-item__rub-price-all">
-                      <use xlink:href="img/icons/icons.svg#price"></use>
-                    </svg>
-                  </span>
-                </div>
-                <div class="product-item__inner-cart">
-                  <span class="product-item__availability">В наличии</span>
-                </div>
-                <div class="product-item__modal-cart-inner">
-                  <span class="product-item__modal-cart-text">Кол-во:</span>
-                  <input class="product-item__modal-cart-number" type="number">
-                </div>
-              </div>
+            </div>
+            <div class="menu-bar__cart-item-btn-inner">
+              <button class="menu-bar__cart-item-btn">
+                <img src="img/global/copy.svg" alt="">
+              </button>
+              <button class="menu-bar__cart-item-btn">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#favorites"></use>
+                </svg>
+              </button>
+              <button class="menu-bar__cart-item-btn">
+                <img src="img/global/del.svg" alt="">
+              </button>
             </div>
           </div>
-          <div class="product-item">
-            <div class="product-item__img-inner">
-              <img class="product-item__img-bg" src="img/product-item/item-bg-1.jpg" alt="">
-              <img class="product-item__img" src="img/product-item/item-1.png" alt="">
-            </div>
-            <div class="product-item__content">
-              <div class="menu-bar__product-item-inner">
+          <div class="product-item-wrapper">
+            <div class="product-item product-item--no-availability">
+              <div class="product-item__img-wrapper">
+                <div class="product-item__img-inner">
+                  <img class="product-item__img-bg" src="img/product-item/item-bg-1.jpg" alt="">
+                  <img class="product-item__img" src="img/product-item/item-1.png" alt="">
+                  <div class="product-item__img-hover"></div>
+                  <a class="product-item__hover-icon" href="product.html">
+                    <img src="img/product-item/hover.svg" alt="Посмореть товар">
+                  </a>
+                </div>
+              </div>
+              <div class="product-item__content">
                 <a class="product-item__title-link" href="product.html">
                   <h2 class="product-item__title">
                     Поворотная Wi-Fi камера
                   </h2>
                 </a>
-                <div class="menu-bar__product-item-btn">
-                  <button class="menu-bar__product-item-copy">
-                    <img src="img/products/copy.svg" alt="">
-                  </button>
-                  <button class="menu-bar__product-item-like">
-                    <svg>
-                      <use xlink:href="img/icons/icons.sbg#favorites"></use>
-                    </svg>
-                  </button>
-                  <button class="menu-bar__product-item-del">
-                    <img src="img/products/del.svg" alt="">
-                  </button>
+                <span class="product-item__art">Арт.: RV-3416</span>
+                <p class="product-item__desc">
+                  W-Fi поворотная видеокамера 355°,
+                  Full HD 1080p, 2 МП, microSD до 128 GB
+                </p>
+                <div class="product-item__bottom">
+                  <div class="product-item__price-inner">
+                    <span class="product-item__price-one">
+                      3 190
+                      <svg class="product-item__rub-price">
+                        <use xlink:href="img/icons/icons.svg#price"></use>
+                      </svg>
+                    </span>
+                    <span class="product-item__price-all">
+                      /6 380
+                      <svg class="product-item__rub-price">
+                        <use xlink:href="img/icons/icons.svg#price"></use>
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="product-item__inner-cart">
+                    <span class="product-item__availability">В наличии</span>
+                    <div class="product-item__modal-cart-inner">
+                      <span class="product-item__modal-cart-text">Кол-во:</span>
+                      <input class="product-item__modal-cart-number" type="number">
+                    </div>
+                  </div>
                 </div>
               </div>
-              <span class="product-item__art">Арт.: RV-3416</span>
-              <div class="product-item__bottom">
-                <div class="product-item__price-inner">
-                  <span class="product-item__price">
-                    3 190
-                    <svg class="product-item__rub-price">
-                      <use xlink:href="img/icons/icons.svg#price"></use>
-                    </svg>
-                  </span>
-                  <span class="product-item__price-all">
-                    6 380
-                    <svg class="product-item__rub-price-all">
-                      <use xlink:href="img/icons/icons.svg#price"></use>
-                    </svg>
-                  </span>
-                </div>
-                <div class="product-item__inner-cart">
-                  <span class="product-item__availability">В наличии</span>
-                </div>
-                <div class="product-item__modal-cart-inner">
-                  <span class="product-item__modal-cart-text">Кол-во:</span>
-                  <input class="product-item__modal-cart-number" type="number">
-                </div>
-              </div>
+            </div>
+            <div class="menu-bar__cart-item-btn-inner">
+              <button class="menu-bar__cart-item-btn">
+                <img src="img/global/copy.svg" alt="">
+              </button>
+              <button class="menu-bar__cart-item-btn">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#favorites"></use>
+                </svg>
+              </button>
+              <button class="menu-bar__cart-item-btn">
+                <img src="img/global/del.svg" alt="">
+              </button>
             </div>
           </div>
-          <div class="product-item">
-            <div class="product-item__img-inner">
-              <img class="product-item__img-bg" src="img/product-item/item-bg-1.jpg" alt="">
-              <img class="product-item__img" src="img/product-item/item-1.png" alt="">
-            </div>
-            <div class="product-item__content">
-              <div class="menu-bar__product-item-inner">
+          <div class="product-item-wrapper">
+            <div class="product-item product-item--no-availability">
+              <div class="product-item__img-wrapper">
+                <div class="product-item__img-inner">
+                  <img class="product-item__img-bg" src="img/product-item/item-bg-1.jpg" alt="">
+                  <img class="product-item__img" src="img/product-item/item-1.png" alt="">
+                  <div class="product-item__img-hover"></div>
+                  <a class="product-item__hover-icon" href="product.html">
+                    <img src="img/product-item/hover.svg" alt="Посмореть товар">
+                  </a>
+                </div>
+              </div>
+              <div class="product-item__content">
                 <a class="product-item__title-link" href="product.html">
                   <h2 class="product-item__title">
                     Поворотная Wi-Fi камера
                   </h2>
                 </a>
-                <div class="menu-bar__product-item-btn">
-                  <button class="menu-bar__product-item-copy">
-                    <img src="img/products/copy.svg" alt="">
-                  </button>
-                  <button class="menu-bar__product-item-like">
-                    <svg>
-                      <use xlink:href="img/icons/icons.sbg#favorites"></use>
-                    </svg>
-                  </button>
-                  <button class="menu-bar__product-item-del">
-                    <img src="img/products/del.svg" alt="">
-                  </button>
+                <span class="product-item__art">Арт.: RV-3416</span>
+                <p class="product-item__desc">
+                  W-Fi поворотная видеокамера 355°,
+                  Full HD 1080p, 2 МП, microSD до 128 GB
+                </p>
+                <div class="product-item__bottom">
+                  <div class="product-item__price-inner">
+                    <span class="product-item__price-one">
+                      3 190
+                      <svg class="product-item__rub-price">
+                        <use xlink:href="img/icons/icons.svg#price"></use>
+                      </svg>
+                    </span>
+                    <span class="product-item__price-all">
+                      /6 380
+                      <svg class="product-item__rub-price">
+                        <use xlink:href="img/icons/icons.svg#price"></use>
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="product-item__inner-cart">
+                    <span class="product-item__availability">В наличии</span>
+                    <div class="product-item__modal-cart-inner">
+                      <span class="product-item__modal-cart-text">Кол-во:</span>
+                      <input class="product-item__modal-cart-number" type="number">
+                    </div>
+                  </div>
                 </div>
               </div>
-              <span class="product-item__art">Арт.: RV-3416</span>
-              <div class="product-item__bottom">
-                <div class="product-item__price-inner">
-                  <span class="product-item__price">
-                    3 190
-                    <svg class="product-item__rub-price">
-                      <use xlink:href="img/icons/icons.svg#price"></use>
-                    </svg>
-                  </span>
-                  <span class="product-item__price-all">
-                    6 380
-                    <svg class="product-item__rub-price-all">
-                      <use xlink:href="img/icons/icons.svg#price"></use>
-                    </svg>
-                  </span>
-                </div>
-                <div class="product-item__inner-cart">
-                  <span class="product-item__availability">В наличии</span>
-                </div>
-                <div class="product-item__modal-cart-inner">
-                  <span class="product-item__modal-cart-text">Кол-во:</span>
-                  <input class="product-item__modal-cart-number" type="number">
+            </div>
+            <div class="menu-bar__cart-item-btn-inner">
+              <button class="menu-bar__cart-item-btn">
+                <img src="img/global/copy.svg" alt="">
+              </button>
+              <button class="menu-bar__cart-item-btn">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#favorites"></use>
+                </svg>
+              </button>
+              <button class="menu-bar__cart-item-btn">
+                <img src="img/global/del.svg" alt="">
+              </button>
+            </div>
+          </div>
+          <div class="product-item-wrapper">
+            <div class="product-item product-item--no-availability">
+              <div class="product-item__img-wrapper">
+                <div class="product-item__img-inner">
+                  <img class="product-item__img-bg" src="img/product-item/item-bg-1.jpg" alt="">
+                  <img class="product-item__img" src="img/product-item/item-1.png" alt="">
+                  <div class="product-item__img-hover"></div>
+                  <a class="product-item__hover-icon" href="product.html">
+                    <img src="img/product-item/hover.svg" alt="Посмореть товар">
+                  </a>
                 </div>
               </div>
+              <div class="product-item__content">
+                <a class="product-item__title-link" href="product.html">
+                  <h2 class="product-item__title">
+                    Поворотная Wi-Fi камера
+                  </h2>
+                </a>
+                <span class="product-item__art">Арт.: RV-3416</span>
+                <p class="product-item__desc">
+                  W-Fi поворотная видеокамера 355°,
+                  Full HD 1080p, 2 МП, microSD до 128 GB
+                </p>
+                <div class="product-item__bottom">
+                  <div class="product-item__price-inner">
+                    <span class="product-item__price-one">
+                      3 190
+                      <svg class="product-item__rub-price">
+                        <use xlink:href="img/icons/icons.svg#price"></use>
+                      </svg>
+                    </span>
+                    <span class="product-item__price-all">
+                      /6 380
+                      <svg class="product-item__rub-price">
+                        <use xlink:href="img/icons/icons.svg#price"></use>
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="product-item__inner-cart">
+                    <span class="product-item__availability">В наличии</span>
+                    <div class="product-item__modal-cart-inner">
+                      <span class="product-item__modal-cart-text">Кол-во:</span>
+                      <input class="product-item__modal-cart-number" type="number">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="menu-bar__cart-item-btn-inner">
+              <button class="menu-bar__cart-item-btn">
+                <img src="img/global/copy.svg" alt="">
+              </button>
+              <button class="menu-bar__cart-item-btn">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#favorites"></use>
+                </svg>
+              </button>
+              <button class="menu-bar__cart-item-btn">
+                <img src="img/global/del.svg" alt="">
+              </button>
+            </div>
+          </div>
+          <div class="product-item-wrapper">
+            <div class="product-item product-item--no-availability">
+              <div class="product-item__img-wrapper">
+                <div class="product-item__img-inner">
+                  <img class="product-item__img-bg" src="img/product-item/item-bg-1.jpg" alt="">
+                  <img class="product-item__img" src="img/product-item/item-1.png" alt="">
+                  <div class="product-item__img-hover"></div>
+                  <a class="product-item__hover-icon" href="product.html">
+                    <img src="img/product-item/hover.svg" alt="Посмореть товар">
+                  </a>
+                </div>
+              </div>
+              <div class="product-item__content">
+                <a class="product-item__title-link" href="product.html">
+                  <h2 class="product-item__title">
+                    Поворотная Wi-Fi камера
+                  </h2>
+                </a>
+                <span class="product-item__art">Арт.: RV-3416</span>
+                <p class="product-item__desc">
+                  W-Fi поворотная видеокамера 355°,
+                  Full HD 1080p, 2 МП, microSD до 128 GB
+                </p>
+                <div class="product-item__bottom">
+                  <div class="product-item__price-inner">
+                    <span class="product-item__price-one">
+                      3 190
+                      <svg class="product-item__rub-price">
+                        <use xlink:href="img/icons/icons.svg#price"></use>
+                      </svg>
+                    </span>
+                    <span class="product-item__price-all">
+                      /6 380
+                      <svg class="product-item__rub-price">
+                        <use xlink:href="img/icons/icons.svg#price"></use>
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="product-item__inner-cart">
+                    <span class="product-item__availability">В наличии</span>
+                    <div class="product-item__modal-cart-inner">
+                      <span class="product-item__modal-cart-text">Кол-во:</span>
+                      <input class="product-item__modal-cart-number" type="number">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="menu-bar__cart-item-btn-inner">
+              <button class="menu-bar__cart-item-btn">
+                <img src="img/global/copy.svg" alt="">
+              </button>
+              <button class="menu-bar__cart-item-btn">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#favorites"></use>
+                </svg>
+              </button>
+              <button class="menu-bar__cart-item-btn">
+                <img src="img/global/del.svg" alt="">
+              </button>
+            </div>
+          </div>
+          <div class="product-item-wrapper">
+            <div class="product-item product-item--no-availability">
+              <div class="product-item__img-wrapper">
+                <div class="product-item__img-inner">
+                  <img class="product-item__img-bg" src="img/product-item/item-bg-1.jpg" alt="">
+                  <img class="product-item__img" src="img/product-item/item-1.png" alt="">
+                  <div class="product-item__img-hover"></div>
+                  <a class="product-item__hover-icon" href="product.html">
+                    <img src="img/product-item/hover.svg" alt="Посмореть товар">
+                  </a>
+                </div>
+              </div>
+              <div class="product-item__content">
+                <a class="product-item__title-link" href="product.html">
+                  <h2 class="product-item__title">
+                    Поворотная Wi-Fi камера
+                  </h2>
+                </a>
+                <span class="product-item__art">Арт.: RV-3416</span>
+                <p class="product-item__desc">
+                  W-Fi поворотная видеокамера 355°,
+                  Full HD 1080p, 2 МП, microSD до 128 GB
+                </p>
+                <div class="product-item__bottom">
+                  <div class="product-item__price-inner">
+                    <span class="product-item__price-one">
+                      3 190
+                      <svg class="product-item__rub-price">
+                        <use xlink:href="img/icons/icons.svg#price"></use>
+                      </svg>
+                    </span>
+                    <span class="product-item__price-all">
+                      /6 380
+                      <svg class="product-item__rub-price">
+                        <use xlink:href="img/icons/icons.svg#price"></use>
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="product-item__inner-cart">
+                    <span class="product-item__availability">В наличии</span>
+                    <div class="product-item__modal-cart-inner">
+                      <span class="product-item__modal-cart-text">Кол-во:</span>
+                      <input class="product-item__modal-cart-number" type="number">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="menu-bar__cart-item-btn-inner">
+              <button class="menu-bar__cart-item-btn">
+                <img src="img/global/copy.svg" alt="">
+              </button>
+              <button class="menu-bar__cart-item-btn">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#favorites"></use>
+                </svg>
+              </button>
+              <button class="menu-bar__cart-item-btn">
+                <img src="img/global/del.svg" alt="">
+              </button>
+            </div>
+          </div>
+          <div class="product-item-wrapper">
+            <div class="product-item product-item--no-availability">
+              <div class="product-item__img-wrapper">
+                <div class="product-item__img-inner">
+                  <img class="product-item__img-bg" src="img/product-item/item-bg-1.jpg" alt="">
+                  <img class="product-item__img" src="img/product-item/item-1.png" alt="">
+                  <div class="product-item__img-hover"></div>
+                  <a class="product-item__hover-icon" href="product.html">
+                    <img src="img/product-item/hover.svg" alt="Посмореть товар">
+                  </a>
+                </div>
+              </div>
+              <div class="product-item__content">
+                <a class="product-item__title-link" href="product.html">
+                  <h2 class="product-item__title">
+                    Поворотная Wi-Fi камера
+                  </h2>
+                </a>
+                <span class="product-item__art">Арт.: RV-3416</span>
+                <p class="product-item__desc">
+                  W-Fi поворотная видеокамера 355°,
+                  Full HD 1080p, 2 МП, microSD до 128 GB
+                </p>
+                <div class="product-item__bottom">
+                  <div class="product-item__price-inner">
+                    <span class="product-item__price-one">
+                      3 190
+                      <svg class="product-item__rub-price">
+                        <use xlink:href="img/icons/icons.svg#price"></use>
+                      </svg>
+                    </span>
+                    <span class="product-item__price-all">
+                      /6 380
+                      <svg class="product-item__rub-price">
+                        <use xlink:href="img/icons/icons.svg#price"></use>
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="product-item__inner-cart">
+                    <span class="product-item__availability">В наличии</span>
+                    <div class="product-item__modal-cart-inner">
+                      <span class="product-item__modal-cart-text">Кол-во:</span>
+                      <input class="product-item__modal-cart-number" type="number">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="menu-bar__cart-item-btn-inner">
+              <button class="menu-bar__cart-item-btn">
+                <img src="img/global/copy.svg" alt="">
+              </button>
+              <button class="menu-bar__cart-item-btn">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#favorites"></use>
+                </svg>
+              </button>
+              <button class="menu-bar__cart-item-btn">
+                <img src="img/global/del.svg" alt="">
+              </button>
             </div>
           </div>
         </div>
-      </div>
+        <div class="menu-bar__issue">
+          <span class="menu-bar__issue-total">Итого 52 584 руб.</span>
+          <div class="menu-bar__issue-btn-inner">
+            <a class="menu-bar__issue-btn" href="#">ПЕРЕЙТИ В КОРЗИНУ</a>
+            <button class="menu-bar__issue-btn" type="submit">БЫСТРЫЙ ЗАКАЗ</button>
+          </div>
+        </div>
+        <div class="menu-bar__empty">
+          <img src="img/global/cart.svg" alt="">
+          <div class="menu-bar__empty-text-inner">
+            <span class="menu-bar__empty-text-title">К сожалению, ваша корзина пуста</span>
+            <span class="menu-bar__empty-text">Исправить это просто: выберите в каталоге интересующий товар
+              и нажмите кнопку “ в корзину”.</span>
+          </div>
+        </div>
+      </form>
     </div>
     <div class="menu-bar__like menu-bar__block">
       <svg class="menu-bar__like-icon menu-bar__icon">
