@@ -107,6 +107,7 @@
   &__top-search {
     flex: 1;
     display: flex;
+    position: relative;
   }
 
   &__top-search-input {
@@ -192,7 +193,7 @@
     box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
     font-size: 15px;
-    z-index: 5;
+    z-index: 60;
     background: #fff;
     color: #4b4b4b;
     display: none;
@@ -235,9 +236,6 @@
         display: block;
       }
     }
-  }
-  &__top-search-list-position {
-    position: relative;
   }
   &__top-search-list-wrapper {
     position: absolute;
