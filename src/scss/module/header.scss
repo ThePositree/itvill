@@ -3,6 +3,10 @@
   color: #555;
   margin-top: 12px;
 
+  .container {
+    padding: 0 15px;
+  }
+
   &__top {
     display: flex;
     margin-bottom: 22px;
@@ -10,8 +14,22 @@
 
   &__logo {
     margin-right: 25px;
-    img {
-      margin-top: 13px;
+    display: flex;
+    align-items: center;
+    margin-top: -10%;
+    transform: translateY(120px);
+    height: 65px;
+    &-icon {
+      width: 65px;
+      height: 65px;
+      margin-right: 24px;
+    }
+    &-text {
+      flex: 0 1 286px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
     }
   }
 
@@ -26,6 +44,7 @@
   }
   &__top-links-inner {
     display: flex;
+    margin-right: 45px;
   }
 
   &__city-btn {
@@ -83,11 +102,11 @@
   &__top-inner {
     display: flex;
   }
+  
 
   &__top-search {
     flex: 1;
     display: flex;
-    position: relative;
   }
 
   &__top-search-input {
@@ -108,6 +127,9 @@
     padding-bottom: 9px;
     padding-right: 6px;
     background-color: transparent;
+    img {
+      margin-bottom: -5px;
+    }
   }
 
   &__top-login {
@@ -140,7 +162,7 @@
     white-space: nowrap;
 
     & + & {
-      margin-left: 40px;
+      margin-left: 48px;
     }
   }
 
@@ -152,6 +174,9 @@
     }
     img {
       margin-right: 15px;
+      width: 26px;
+      height: 27px;
+      object-fit: none;
     }
   }
 
@@ -171,6 +196,7 @@
     background: #fff;
     color: #4b4b4b;
     display: none;
+    white-space: normal;
     &:hover {
       display: block;
     }
@@ -209,6 +235,9 @@
         display: block;
       }
     }
+  }
+  &__top-search-list-position {
+    position: relative;
   }
   &__top-search-list-wrapper {
     position: absolute;
@@ -318,5 +347,16 @@
     @extend %montserrat-600;
     align-self: center;
     margin-top: 30px;
+  }
+  &__mobile-burger {
+    align-self: center;
+    display: none;
+    background-color: transparent;
+  }
+  &__bottom-items-wrapper {
+    display: flex;
+    & + & {
+      margin-left: 48px;
+    }
   }
 }

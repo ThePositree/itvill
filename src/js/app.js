@@ -5,6 +5,17 @@ nikfunctions.isWebp();
 
 $(function () {
 
+  $('.filtres-mobile-close').on('click', function () {
+    $('.products__items').removeClass('products__items--filtres');
+    $('.products__filtres').removeClass('products__filtres--active');
+  });
+
+
+  $('.menu-bar__cart-test-btn').on('click', function () {
+    $('.menu-bar__cart-inner').toggleClass('menu-bar__cart-inner--empty');
+  });
+
+
   $('.header__top-search-submit').on('click', function (e) {
     e.preventDefault;
     $('.header__top-search-list-wrapper').toggleClass('header__top-search-list-wrapper--active');
