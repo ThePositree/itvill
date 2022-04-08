@@ -4814,6 +4814,16 @@ img {
   }
 }
 
+@media (max-width: 780px) {
+  .menu-bar div.menu-bar__cart--active {
+    width: 560px;
+  }
+
+  .menu-bar__cart-show {
+    width: 510px;
+  }
+}
+
 @media (max-width: 768px) {
   .products__items {
     -ms-grid-columns: (1fr)[2];

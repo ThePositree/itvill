@@ -188,19 +188,11 @@ $(function () {
     }
   }
 
-  function checkWidth2() {
-    var windowWidth = $('body').innerWidth(),
-      elem = $('meta[name="viewport"]');
-    if (windowWidth < 570) {
-      elem.attr('content', 'width=570');
-    }
-  }
+
   checkWidth();
-  checkWidth2();
 
   $(window).resize(function () {
     checkWidth();
-    checkWidth2();
   });
 })
 
@@ -227,3 +219,20 @@ const productSwiperSmall = new Swiper(productSliderBig, {
     swiper: productSwiperBig,
   },
 });
+
+const mediaQuery = window.matchMedia('(max-width: 570px)')
+
+function handleTabletChange(e) {
+  if (e.matches) {
+    document.querySelector('meta[name="viewport"]').setAttribute("content", "width=560, initial-scale=1.0, maximum-scale=1.0");
+  } else {
+    document.querySelector('meta[name="viewport"]').setAttribute("content", "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no");
+  }
+}
+mediaQuery.addEventListener('change',handleTabletChange)
+  
+handleTabletChange(mediaQuery)
+
+window.addEventListener("orientationchange", function () {
+  document.querySelector('meta[name="viewport"]').setAttribute("content", "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no");
+})
