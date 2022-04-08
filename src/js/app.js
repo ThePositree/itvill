@@ -192,7 +192,7 @@ $(function () {
     var windowWidth = $('body').innerWidth(),
       elem = $('meta[name="viewport"]');
     if (windowWidth < 570) {
-      elem.attr('content', 'width=570, initial-scale=1.0');
+      elem.attr('content', 'width=570');
     }
   }
   checkWidth();
