@@ -188,12 +188,20 @@ $(function () {
     }
   }
 
+  function checkWidth2() {
+    var windowWidth = $('body').innerWidth(),
+      elem = $('meta[name="viewport"]');
+    if (windowWidth < 570) {
+      elem.attr('content', 'width=570, initial-scale=1.0');
+    }
+  }
   checkWidth();
+  checkWidth2();
 
   $(window).resize(function () {
     checkWidth();
+    checkWidth2();
   });
-
 })
 
 const productSliderBig = document.querySelector('.product__slider-big');
