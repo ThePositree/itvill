@@ -118,6 +118,7 @@
     border-radius: 30px 0px 10px 10px;
     padding: 84px 40px 21px;
     flex-direction: column;
+    height: 57vh;
   }
 
   &__like {
@@ -176,7 +177,7 @@
   &__cart-items-list {
     flex: 1;
     overflow-y: scroll;
-    max-height: 390px;
+    max-height: 100%;
     .product-item__hover-icon {
       img {
         width: 40px;
@@ -307,6 +308,7 @@
     flex-direction: column;
     padding-top: 16px;
     border-top: 2px solid #007abe;
+    margin-top: auto;
   }
   &__issue-total {
     color: #007abe;
@@ -392,6 +394,10 @@
       span {
         display: block;
       }
+    }
+
+    .menu-bar__cart-show {
+      height: 200px;
     }
 
     & .menu-bar__cart--active {

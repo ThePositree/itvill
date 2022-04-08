@@ -229,10 +229,18 @@ function handleTabletChange(e) {
     document.querySelector('meta[name="viewport"]').setAttribute("content", "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no");
   }
 }
-mediaQuery.addEventListener('change',handleTabletChange)
-  
+mediaQuery.addEventListener('change', handleTabletChange)
+
 handleTabletChange(mediaQuery)
 
 window.addEventListener("orientationchange", function () {
   document.querySelector('meta[name="viewport"]').setAttribute("content", "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no");
+})
+
+document.addEventListener('click',function (e) {
+  if (e.target !== '.menu-bar__cart') {
+    console.log('clol')
+  } else {
+    console.log('ghjk');
+  }
 })
