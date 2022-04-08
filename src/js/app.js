@@ -224,7 +224,7 @@ const mediaQuery = window.matchMedia('(max-width: 570px)')
 
 function handleTabletChange(e) {
   if (e.matches) {
-    document.querySelector('meta[name="viewport"]').setAttribute("content", "width=560, initial-scale=1.0, maximum-scale=1.0");
+    document.querySelector('meta[name="viewport"]').setAttribute("content", "width=560");
   } else {
     document.querySelector('meta[name="viewport"]').setAttribute("content", "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no");
   }
