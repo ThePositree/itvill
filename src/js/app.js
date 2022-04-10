@@ -236,7 +236,7 @@ const mediaQuery = window.matchMedia('(max-width: 570px)')
 
 function handleTabletChange(e) {
   if (e.matches) {
-    document.querySelector('meta[name="viewport"]').setAttribute("content", "width=560");
+    document.querySelector('meta[name="viewport"]').setAttribute("content", "width=560, initial-scale=1.0");
   } else {
     document.querySelector('meta[name="viewport"]').setAttribute("content", "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no");
   }
@@ -250,7 +250,7 @@ window.addEventListener("orientationchange", function () {
 })
 
 
-const mediaQuery2 = window.matchMedia('(max-width: 880px)')
+const mediaQuery2 = window.matchMedia('(max-width: 880px)');
 
 
 function filtresHide(e) {
