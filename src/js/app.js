@@ -5,23 +5,29 @@ nikfunctions.isWebp();
 
 $(function () {
 
+  $('menu-bar__cart-show').on('click', function (e) {
+    e.stopPropagation();
+  });
+  
   $('.filtres-mobile-close').on('click', function () {
     $('.products__items').removeClass('products__items--filtres');
     $('.products__filtres').removeClass('products__filtres--active');
   });
-
-
-  $('.menu-bar__cart-test-btn').on('click', function () {
+  
+  
+  $('.menu-bar__cart-test-btn').on('click', function (e) {
+    e.stopPropagation();
     $('.menu-bar__cart-inner').toggleClass('menu-bar__cart-inner--empty');
   });
-
-
+  
+  
   $('.header__top-search-submit').on('click', function (e) {
-    e.preventDefault;
+    e.preventDefault();
     $('.header__top-search-list-wrapper').toggleClass('header__top-search-list-wrapper--active');
   });
 
-  $('.menu-bar__cart').on('click', function () {
+  $('.menu-bar__cart').on('click', function (e) {
+    e.stopPropagation();
     $(this).toggleClass('menu-bar__cart--active');
   });
 
@@ -68,9 +74,15 @@ $(function () {
     $('.products__items').addClass('products__items--list');
   });
 
-  $('.products__show-filtres').on('click', function () {
+  $('.products__show-filtres').on('click', function (e) {
+    e.stopPropagation();
     $('.products__filtres').toggleClass('products__filtres--active');
     $('.products__items').toggleClass('products__items--filtres');
+  });
+
+
+  $('.products__filtres').on('click', function (e) {
+    e.stopPropagation();
   });
 
 
@@ -237,10 +249,32 @@ window.addEventListener("orientationchange", function () {
   document.querySelector('meta[name="viewport"]').setAttribute("content", "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no");
 })
 
-document.addEventListener('click',function (e) {
-  if (e.target !== '.menu-bar__cart') {
-    console.log('clol')
+
+const mediaQuery2 = window.matchMedia('(max-width: 880px)')
+
+
+function filtresHide(e) {
+  if (e.matches) {
+    document.body.addEventListener('click',function (event) {
+      if (event.target.className !== 'products__filtres' && event.target.className !== 'products__show-filtres') {
+        document.querySelector('.products__filtres').classList.remove('products__filtres--active')
+      }
+    })
   } else {
-    console.log('ghjk');
+    
+  }
+}
+
+
+mediaQuery2.addEventListener('change', filtresHide)
+
+
+filtresHide(mediaQuery2)
+
+
+
+document.body.addEventListener('click', function (e) {
+  if (e.target.className !== 'menu-bar__cart-inner' && e.target.className !== 'menu-bar__cart-show' && e.target.className !== 'menu-bar__cart-test-btn') {
+    document.querySelector('.menu-bar__cart').classList.remove('menu-bar__cart--active')
   }
 })
