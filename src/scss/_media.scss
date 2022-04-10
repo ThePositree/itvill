@@ -237,14 +237,16 @@
   }
   .header__top-content {
     flex: 1;
+    position: absolute;
+    right: 0;
+    left: 0;
   }
   .header__top-info {
-    width: calc(100vw - 30px);
     top: 0;
     left: auto;
     right: 0;
-    transform: translateX(0px);
     min-width: 0;
+    width: 100%;
   }
   .header__top-search {
     position: absolute;
@@ -256,6 +258,7 @@
   }
   .header__top {
     margin-bottom: 80px;
+    position: relative;
   }
   .header__top-search-list {
     justify-content: space-between;
@@ -415,12 +418,13 @@
       max-width: 100%;
     }
   }
+}
+@media (max-width: 725px) {
   .header__phone-link {
     position: absolute;
     min-width: 170px;
     top: 55px;
-    right: 100vw;
-    transform: translateX(470px);
+    left: 265px;
   }
 }
 @media (max-width: 665px) {
@@ -449,6 +453,11 @@
   }
   .header__top-search-product-items {
     margin-left: 10px;
+  }
+}
+@media (max-width: 570px) {
+  .header__top-search {
+    width: 540px;
   }
 }
 @media (max-width: 520px) {

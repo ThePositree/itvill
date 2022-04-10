@@ -236,7 +236,7 @@ const mediaQuery = window.matchMedia('(max-width: 570px)')
 
 function viewPortMobile(e) {
   if (e.matches) {
-    document.querySelector('meta[name="viewport"]').setAttribute("content", "width=560, initial-scale=1");
+    document.querySelector('meta[name="viewport"]').setAttribute("content", "width=570 ,user-scalable=no");
   } else {
     document.querySelector('meta[name="viewport"]').setAttribute("content", "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no");
   }
@@ -278,3 +278,12 @@ document.body.addEventListener('click', function (e) {
     document.querySelector('.menu-bar__cart').classList.remove('menu-bar__cart--active')
   }
 })
+
+
+// window.addEventListener('resize', () => {
+//   document.querySelector('meta[name="viewport"]').setAttribute(
+//     'content',
+//     'width=device-width, user-scalable=no, initial-scale=' + (window.matchMedia('(max-width: 570px)').matches ? document.clientWidth / 570 : 1.0)
+//   );
+// })
+// window.dispatchEvent(new Event('resize'));
