@@ -5,6 +5,12 @@ nikfunctions.isWebp();
 
 $(function () {
 
+  $('menu-bar__issue').on('click', function (e) {
+    e.stopPropagation();
+  });
+  $('jq-number').on('click', function (e) {
+    e.stopImmediatePropagation();
+  });
   $('menu-bar__cart-show').on('click', function (e) {
     e.stopPropagation();
   });
@@ -29,6 +35,7 @@ $(function () {
   $('.menu-bar__cart').on('click', function (e) {
     e.stopPropagation();
     $(this).toggleClass('menu-bar__cart--active');
+    $(this).closest('.menu-bar').toggleClass('menu-bar--active-mobile');
   });
 
   $('.product__form-color-select').styler();
@@ -274,9 +281,11 @@ filtresHide(mediaQuery2)
 
 
 document.body.addEventListener('click', function (e) {
-  if (e.target.className !== 'menu-bar__cart-inner' && e.target.className !== 'menu-bar__cart-show' && e.target.className !== 'menu-bar__cart-test-btn') {
+  if (e.target.className !== 'menu-bar__cart-inner' && e.target.className !== 'menu-bar__cart-show' && e.target.className !== 'menu-bar__cart-test-btn' && e.target.className !== 'menu-bar__issue') {
     document.querySelector('.menu-bar__cart').classList.remove('menu-bar__cart--active')
+    document.querySelector('.menu-bar').classList.remove('menu-bar--active-mobile')
   }
+  console.log(e.target.className);
 })
 
 

@@ -3296,6 +3296,9 @@ img {
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
   z-index: 10;
+  -webkit-transition: top 0.3s;
+  -o-transition: top 0.3s;
+  transition: top 0.3s;
 }
 
 .menu-bar__cart-reset {
@@ -4414,7 +4417,7 @@ img {
     left: 0;
     right: 0;
     min-width: 690px;
-    z-index: 1000;
+    z-index: 150;
   }
 
   .header__top-content {
@@ -4700,6 +4703,7 @@ img {
 @media (max-width: 950px) {
   .header__logo {
     margin-top: -90px;
+    z-index: 100;
   }
 }
 
@@ -4955,6 +4959,15 @@ img {
 @media (max-width: 570px) {
   .header__top-search {
     width: 540px;
+  }
+
+  .menu-bar--active-mobile {
+    top: 125px;
+    z-index: 150;
+  }
+
+  .menu-bar__cart-show {
+    height: 55vh;
   }
 }
 

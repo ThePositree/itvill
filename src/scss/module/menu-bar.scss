@@ -4,6 +4,7 @@
   top: 50vh;
   transform: translateY(-50%);
   z-index: 10;
+  transition: top 0.3s;
   &__cart-reset {
     color: #bcbcbc;
     font-size: 18px;

@@ -67,7 +67,7 @@
     left: 0;
     right: 0;
     min-width: 690px;
-    z-index: 1000;
+    z-index: 150;
   }
   .header__top-content {
     height: 71px;
@@ -267,6 +267,7 @@
 @media (max-width: 950px) {
   .header__logo {
     margin-top: -90px;
+    z-index: 100;
   }
 }
 @media (max-width: 880px) {
@@ -458,6 +459,13 @@
 @media (max-width: 570px) {
   .header__top-search {
     width: 540px;
+  }
+  .menu-bar--active-mobile {
+    top: 125px;
+    z-index: 150;
+  }
+  .menu-bar__cart-show {
+    height: 55vh;
   }
 }
 @media (max-width: 520px) {
