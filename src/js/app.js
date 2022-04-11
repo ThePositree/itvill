@@ -4,38 +4,46 @@ nikfunctions.isWebp();
 
 
 $(function () {
+  $('.category__title').on('click', function () {
+    $('.category__items-wrapper').addClass('category__items-wrapper--active');
+  });
+  $('.category__close').on('click', function () {
+    $('.category__items-wrapper').removeClass('category__items-wrapper--active');
+  });
 
-  $('menu-bar__issue').on('click', function (e) {
-    e.stopPropagation();
+
+  let cart = $('.menu-bar__cart-inner')
+  $('.menu-bar__cart').on('click', function () {
+    if (cart.hasClass('menu-bar__cart-inner--empty')) {
+      let menuBarEmpty = $(this).closest('.menu-bar')[0];
+      $(menuBarEmpty).removeClass('menu-bar--active');
+    } else {
+      let menuBarNoEmpty = $(this).closest('.menu-bar')[0];
+      $(menuBarNoEmpty).addClass('menu-bar--active');
+    }
+    if ($(this).hasClass('menu-bar__cart--active')) {
+      $(this).removeClass('menu-bar__cart--active');
+      $('.menu-bar').removeClass('menu-bar--active');
+    } else {
+      $(this).addClass('menu-bar__cart--active');
+    }
   });
-  $('jq-number').on('click', function (e) {
-    e.stopImmediatePropagation();
-  });
-  $('menu-bar__cart-show').on('click', function (e) {
-    e.stopPropagation();
-  });
-  
+
   $('.filtres-mobile-close').on('click', function () {
     $('.products__items').removeClass('products__items--filtres');
     $('.products__filtres').removeClass('products__filtres--active');
   });
-  
-  
+
+
   $('.menu-bar__cart-test-btn').on('click', function (e) {
     e.stopPropagation();
     $('.menu-bar__cart-inner').toggleClass('menu-bar__cart-inner--empty');
   });
-  
-  
+
+
   $('.header__top-search-submit').on('click', function (e) {
     e.preventDefault();
     $('.header__top-search-list-wrapper').toggleClass('header__top-search-list-wrapper--active');
-  });
-
-  $('.menu-bar__cart').on('click', function (e) {
-    e.stopPropagation();
-    $(this).toggleClass('menu-bar__cart--active');
-    $(this).closest('.menu-bar').toggleClass('menu-bar--active-mobile');
   });
 
   $('.product__form-color-select').styler();
@@ -217,6 +225,7 @@ $(function () {
 
 const productSliderBig = document.querySelector('.product__slider-big');
 const productSliderSmall = document.querySelector('.product__slider-small');
+const productSliderWith = document.querySelector('.product__with-wrapper')
 console.log(productSliderBig)
 const productSwiperBig = new Swiper(productSliderSmall, {
   loop: true,
@@ -238,6 +247,29 @@ const productSwiperSmall = new Swiper(productSliderBig, {
     swiper: productSwiperBig,
   },
 });
+const productSwiperWith = new Swiper(productSliderWith, {
+  pagination: {
+    el: '.product__with-pagination',
+    clickable: true,
+  },
+  slidesPerView: 3,
+  spaceBetween: 20,
+  breakpoints: {
+    320: {
+      spaceBetween: 10,
+      slidesPerView: 2,
+    },
+    798: {
+      slidesPerView: 3,
+    },
+    992: {
+      slidesPerView: 2,
+    },
+    1300: {
+      slidesPerView: 3,
+    },
+  },
+})
 
 const mediaQuery = window.matchMedia('(max-width: 570px)')
 
@@ -262,13 +294,13 @@ const mediaQuery2 = window.matchMedia('(max-width: 880px)');
 
 function filtresHide(e) {
   if (e.matches) {
-    document.body.addEventListener('click',function (event) {
+    document.body.addEventListener('click', function (event) {
       if (event.target.className !== 'products__filtres' && event.target.className !== 'products__show-filtres') {
         document.querySelector('.products__filtres').classList.remove('products__filtres--active')
       }
     })
   } else {
-    
+
   }
 }
 
@@ -281,11 +313,10 @@ filtresHide(mediaQuery2)
 
 
 document.body.addEventListener('click', function (e) {
-  if (e.target.className !== 'menu-bar__cart-inner' && e.target.className !== 'menu-bar__cart-show' && e.target.className !== 'menu-bar__cart-test-btn' && e.target.className !== 'menu-bar__issue') {
+  if (!e.target.closest('.menu-bar')) {
     document.querySelector('.menu-bar__cart').classList.remove('menu-bar__cart--active')
-    document.querySelector('.menu-bar').classList.remove('menu-bar--active-mobile')
+    document.querySelector('.menu-bar').classList.remove('menu-bar--active')
   }
-  console.log(e.target.className);
 })
 
 

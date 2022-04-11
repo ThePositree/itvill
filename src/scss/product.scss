@@ -161,6 +161,7 @@
       width: 103px;
       height: 35px;
       padding: 0;
+      margin-left: 18px;
     }
     .jq-number__field {
       border: 1px solid #bcbcbc;
@@ -365,11 +366,13 @@
     font-size: 26px;
     margin-bottom: 32px;
   }
-
-  &__with-inner {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 40px;
+  &__with-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  &__with-wrapper {
+    width: 912px;
   }
   &__slider-small-item {
     width: 60px;
@@ -384,7 +387,7 @@
   &__slider-small {
     width: 311px;
   }
-  &__slider-big-item { 
+  &__slider-big-item {
     img {
       width: 100%;
       height: 100%;
@@ -411,6 +414,9 @@
       content: url("../img/global/arrow-left-slider.svg");
     }
   }
+  .product-item__price-inner {
+    white-space: nowrap;
+  }
 }
 .category {
   &__title {
@@ -418,6 +424,7 @@
     margin-bottom: 32px;
     @extend %montserrat-600;
     font-size: 22px;
+    background-color: transparent;
   }
 
   &__item {
@@ -443,6 +450,19 @@
 
   &__icon {
     width: 25px;
+  }
+  &__close {
+    background-color: #fff;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 19px 1px rgba(0, 0, 0, 0.25);
+    display: none;
   }
 }
 
