@@ -19,7 +19,7 @@ export const scss = () => {
         ))
         .pipe(app.plugins.replace(/@img\//g, '../img/'))
         .pipe(sass({
-            outputStyle: 'expanded'
+            outputStyle: "expanded"
         }))
         .pipe(
             app.plugins.if(
@@ -46,8 +46,6 @@ export const scss = () => {
                 })
             )
         )
-        // Расскоментить если надо посмотреть не сжатый файл css
-        .pipe(app.gulp.dest(app.path.build.css))
         .pipe(
             app.plugins.if(
                 app.isBuild,
